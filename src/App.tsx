@@ -4,11 +4,9 @@ import AppRouter from "./router/AppRouter";
 import { WishProvider } from "./context/WishContext";
 
 const App = () => (
-  <HashRouter>
-    <WishProvider>
-      <AppRouter />
-    </WishProvider>
-  </HashRouter>
+  <WishProvider>
+    <AppRouter />
+  </WishProvider>
 );
 
 export default App;
